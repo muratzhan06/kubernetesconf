@@ -10,13 +10,13 @@ metadata:
 spec:
   releaseName: simplewebapp
   chart:
-    git: ssh://git@github.com/pcherednichenko/kubernetesconf
+    git: ssh://git@github.com/muratzhan06/kubernetesconf
     ref: master
     path: charts/simplewebapp
   values:
     image:
-      repository: gcr.io/test-project-266218/github.com/pcherednichenko/simplewebapp
-      tag: "production-70dc5d2"
+      repository: gcr.io/myfirstprojectongcp-368311/github.com/muratzhan06/simplewebapp
+      tag: "production-$COMMIT_SHA"
     replicaCount: 1
     service:
       port: 80
